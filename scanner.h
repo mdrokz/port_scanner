@@ -8,4 +8,15 @@
 
 // TODO: Reference additional headers your program requires here.
 
-void port_scanner(char ip_address[16],char f_port[6], char l_port[6]);
+struct port_data {
+	char hostname[200];
+	char f_port[6];
+	char l_port[6];
+	int fport;
+	int lport;
+	int c_port;
+};
+
+void port_scanner(struct port_data pdata);
+
+void* scan_ports(void* pdata);
