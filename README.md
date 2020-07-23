@@ -8,6 +8,9 @@ only runs in unix platforms
 you have to provide a hostname or ip address,a start port and an end port in the cmd/bash
 
 example -
-www.google.com\n
-80\n
+
+www.google.com
+
+80
+
 443
